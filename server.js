@@ -1,19 +1,32 @@
-const express = require('express');
-
+const express = require("express");
+const expressLayouts = require("express-ejs-layouts")
+const static = require("./routes/static")
+const env = require("dotenv").config()
 const app = express();
 
-/* ******************************************
- * Default GET route
- * ***************************************** */
-app.get("/", (req,res) => {res.send("Welcome home!")})
+/*View Engine and Templates*/
+app.set("view engine", "ejs")
+app.use(expressLayouts)
+app.set("layout", "./layouts/layout")
 
+/*Routes*/
 
-const PORT = 3000;
+app.use(static)
 
-app.listen(PORT, (error) =>{
-    if(!error)
-        console.log("Server is Successfully Running, and App is listening on port "+ PORT);
-    else 
-        console.log("Error occurred, server can't start", error);
-    }
-);
+//index route//
+app.get("/", function(req,res){
+    res.render("index",{title:"Home"})
+})
+
+ /* Local Server Information
+ * Values from .env (environment) file
+ *************************/
+const port = process.env.PORT
+const host = process.env.HOST
+
+/* ***********************
+ * Log statement to confirm server operation
+ *************************/
+app.listen(port, () => {
+  console.log(`app listening on ${host}:${port}`)
+})
