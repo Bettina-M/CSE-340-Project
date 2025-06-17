@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "render.com",
+            "connectString": "postgresql://booknest:VMYge5pgnaC1aGzDzy346U2UECdulUrA@dpg-d17hi1vdiees73e8fatg-a.frankfurt-postgres.render.com/booknest_fbwu"
+        }
+    ]
+}
