@@ -11,9 +11,6 @@ importers:
       bcrypt:
         specifier: ^6.0.0
         version: 6.0.0
-      bcryptjs:
-        specifier: ^3.0.2
-        version: 3.0.2
       body-parser:
         specifier: ^2.2.0
         version: 2.2.0
@@ -38,9 +35,6 @@ importers:
       express-ejs-layouts:
         specifier: ^2.5.1
         version: 2.5.1
-      express-message:
-        specifier: ^1.2.3
-        version: 1.2.3
       express-messages:
         specifier: ^1.0.1
         version: 1.0.1
@@ -87,10 +81,6 @@ packages:
   bcrypt@6.0.0:
     resolution: {integrity: sha512-cU8v/EGSrnH+HnxV2z0J7/blxH8gq7Xh2JFT6Aroax7UohdmiJJlxApMxtKfuI7z68NvvVcmR78k2LbT6efhRg==}
     engines: {node: '>= 18'}
-
-  bcryptjs@3.0.2:
-    resolution: {integrity: sha512-k38b3XOZKv60C4E2hVsXTolJWfkGRMbILBIe2IBITXciy5bOsTKot5kDrf3ZfufQtQOUN5mXceUEpU1rTl9Uog==}
-    hasBin: true
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -255,9 +245,6 @@ packages:
   express-ejs-layouts@2.5.1:
     resolution: {integrity: sha512-IXROv9n3xKga7FowT06n1Qn927JR8ZWDn5Dc9CJQoiiaaDqbhW5PDmWShzbpAa2wjWT1vJqaIM1S6vJwwX11gA==}
 
-  express-message@1.2.3:
-    resolution: {integrity: sha512-EoBgk5kljT3LJyoeyzcSsR8+I9dg+As3DZxgpkq/AyMqT1UosDnwqT1IaaUrfLgqaeWz1EV5XTCZ14Rh0Gb2Ig==}
-
   express-messages@1.0.1:
     resolution: {integrity: sha512-twwOvH1K0W7pPO/bz/Lq85GULnnZPQSPX3eLr7VRJyhQW9a+2vj9QI28r/AQhMu6bnNZkpxB/QflsDQi3hI7lQ==}
     engines: {node: '>= 0.10.0'}
@@ -375,9 +362,6 @@ packages:
     resolution: {integrity: sha512-2P4SQ0HrLQ+fw6llpLnOaGAvN2Zu6778SJMrCUwns4fOoG9ayrTiZk3VV8sCPkVZF8ab0zksVpS8FDY5pRCNBA==}
     engines: {node: '>=10'}
     hasBin: true
-
-  jpv@2.2.2:
-    resolution: {integrity: sha512-NCIiqygbMr2gahm5yaRcrUv4BE6MAw2DBTwF5b8WK+Fr9O5XTqCsyTuOZ5QLT85f6yIGAOk09OjHn1jV0ZjVoQ==}
 
   jsonwebtoken@9.0.2:
     resolution: {integrity: sha512-PRp66vJ865SSqOlgqS8hujT5U4AOgMfhrwYIuIhfKaoSCZcirrmASQr8CX7cUg+RMih+hgznrjp99o+W4pJLHQ==}
@@ -727,8 +711,6 @@ snapshots:
       node-addon-api: 8.4.0
       node-gyp-build: 4.8.4
 
-  bcryptjs@3.0.2: {}
-
   binary-extensions@2.3.0: {}
 
   body-parser@1.20.3:
@@ -891,10 +873,6 @@ snapshots:
 
   express-ejs-layouts@2.5.1: {}
 
-  express-message@1.2.3:
-    dependencies:
-      jpv: 2.2.2
-
   express-messages@1.0.1: {}
 
   express-session@1.18.1:
@@ -1054,8 +1032,6 @@ snapshots:
       chalk: 4.1.2
       filelist: 1.0.4
       minimatch: 3.1.2
-
-  jpv@2.2.2: {}
 
   jsonwebtoken@9.0.2:
     dependencies:
