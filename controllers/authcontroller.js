@@ -14,8 +14,7 @@ exports.showRegister = (req, res) => {
 // Handle login
 exports.login = async (req, res) => {
  
-  return res.redirect("/categories")
- /* const {email, pass} = req.body
+   const {email, pass} = req.body
   const user = await authModel.findByEmail(email) 
 
   if (!user) {
@@ -45,10 +44,10 @@ exports.login = async (req, res) => {
       lastname: user.lastname    
     };
 
-    // Remove sensitive data from the user object
+    
     delete user.pass;
 
-    // Sign the token with the payload
+    
     const token = jwt.sign(
       payload,  
       process.env.ACCESS_TOKEN_SECRET,
@@ -66,7 +65,7 @@ exports.login = async (req, res) => {
     console.error("Login error:", err)
     req.flash("notice", "Server error during login.")
     return res.status(500).render("login", { title: "Login" })
-  }*/
+  }
 }
 
 // Handle registration (unchanged)
@@ -87,7 +86,7 @@ exports.register = async (req, res) => {
         "notice",
         `Congratulations, you're registered ${firstname}. Please log in.`
       )
-      return res.redirect("/login") // Fixed path with leading slash
+      return res.redirect("/login") 
     } else {
       req.flash("notice", "Registration failed.")
       return res.status(500).render("register", { title: "Register" })
